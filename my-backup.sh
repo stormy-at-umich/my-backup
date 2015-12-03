@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# "Others" should not have any access to new files or dirs
+umask 0027
+
 NOW=`date +"%Y-%m-%d"`;
 BACKUPBASEDIR="/l/mysql_backups"
 BACKUPDATADIR="${BACKUPBASEDIR}/data"
